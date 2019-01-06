@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 echo "Opencc 1.04"
+echo "/usr/local/lib" >> /etc/ld.so.conf
 exit 0
