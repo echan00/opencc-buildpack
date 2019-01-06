@@ -2,5 +2,5 @@
 cat <<EOF
 ---
 config_vars:
-PATH: $PATH:/app/vendor/opencc/bin
+PATH: $PATH:/vendor/opencc/bin
 EOF
