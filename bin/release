@@ -5,4 +5,4 @@ echo "addons:"
 echo "config_vars:"
 echo "  PATH: $PATH:/app/vendor/opencc/bin"
 echo "default_process_types:"
-echo "/usr/local/lib" >> /etc/ld.so.conf
+echo "/app/vendor/opencc/lib" >> /etc/ld.so.conf
