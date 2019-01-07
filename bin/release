@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-cat <<EOF
----
-config_vars:
-PATH: $PATH:/vendor/opencc/bin:$HOME/vendor/opencc/bin
-EOF
+
+echo "---"
+echo "addons:"
+echo "config_vars:"
+echo "  PATH: $PATH:/app/vendor/opencc/bin"
+echo "default_process_types:"
