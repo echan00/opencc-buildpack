@@ -46,7 +46,7 @@ echo "export PATH=\"\$PATH:$BUILD_DIR/.heroku/cmake/bin\"" > $BP_DIR/export
 
 echo "Testing binary" | indent
 $BUILD_DIR/.heroku/cmake/bin/cmake --version
-
+echo $BUILD_DIR/.heroku/cmake/bin/cmake
 
 
 
