@@ -186,3 +186,7 @@ export PATH=$BUILD_DIR/.heroku/cmake/bin:$PATH
 #export LD_LIBRARY_PATH="/app/.heroku/cmake/bin:$LD_LIBRARY_PATH"
 make
 DESTDIR=/app/vendor make install
+/app/vendor/usr/bin/opencc --version
+tar czf opencc1.tar.gz -C /app/vendor .
+
+
