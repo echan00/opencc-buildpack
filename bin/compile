@@ -19,3 +19,5 @@ export PATH=/app/.heroku/cmake/bin:$PATH
 make
 mkdir /app/vendor
 DESTDIR=/app/vendor make install
+cd ~
+tar czf opencc1.tar.gz -C /app/vendor .
