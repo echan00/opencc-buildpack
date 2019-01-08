@@ -16,8 +16,10 @@ export PATH=/app/.heroku/cmake/bin:$PATH
 #export PATH=/app/.apt/usr/bin:$PATH
 #export PATH=/app/.apt/usr/bin/g++:$PATH
 #CXX=/app/.apt/usr/bin/g++; echo $CXX
-make
-mkdir /app/vendor
-DESTDIR=/app/vendor make install
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/app/vendor/usr/lib
-/app/vendor/usr/bin/opencc --version
+#make
+#mkdir /app/vendor
+#DESTDIR=/app/vendor make install
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/app/vendor/usr/lib
+#/app/vendor/usr/bin/opencc --version
+#tar czf open1.tar.gz -C /app/vendor .
+
