@@ -184,5 +184,4 @@ export PATH=$BUILD_DIR/.heroku/cmake/bin:$PATH
 #CXX=/app/.apt/usr/bin/g++; echo $CXX
 #export LD_LIBRARY_PATH="/app/.heroku/cmake/bin:$LD_LIBRARY_PATH"
 make
-mkdir /app/vendor
 DESTDIR=/app/vendor make install
