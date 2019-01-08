@@ -17,4 +17,5 @@ export PATH=/app/.heroku/cmake/bin:$PATH
 #export PATH=/app/.apt/usr/bin/g++:$PATH
 #CXX=/app/.apt/usr/bin/g++; echo $CXX
 make
+mkdir /app/vendor
 DESTDIR=/app/vendor make install
