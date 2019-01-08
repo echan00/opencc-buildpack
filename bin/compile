@@ -177,7 +177,7 @@ cd /app
 wget https://bintray.com/byvoid/opencc/download_file?file_path=opencc-1.0.4.tar.gz
 mkdir -p vendor/opencc
 tar -C vendor/opencc -xvzf 'download_file?file_path=opencc-1.0.4.tar.gz'
-cd opencc-1.0.4
+cd vendor/opencc/opencc-1.0.4
 #export PATH=/app/.heroku/cmake/bin:$PATH
 export PATH=$BUILD_DIR/.heroku/cmake/bin:$PATH
 #export PATH=/app/.apt/usr/bin:$PATH
