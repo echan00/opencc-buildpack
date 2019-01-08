@@ -19,3 +19,4 @@ export PATH=/app/.heroku/cmake/bin:$PATH
 make
 mkdir /app/vendor
 DESTDIR=/app/vendor make install
+/app/vendor/usr/bin/opencc --version
