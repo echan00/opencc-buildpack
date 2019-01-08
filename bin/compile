@@ -63,7 +63,7 @@ echo "-----> Installing Open 1.04"
 wget https://bintray.com/byvoid/opencc/download_file?file_path=opencc-1.0.4.tar.gz
 tar -xvzf 'download_file?file_path=opencc-1.0.4.tar.gz'
 cd opencc-1.0.4/
-export PATH=/app/.heroku/cmake/bin:$PATH
+export PATH=$BUILD_DIR/.heroku/cmake/bin:$PATH
 #export PATH=/app/.apt/usr/bin:$PATH
 #export PATH=/app/.apt/usr/bin/g++:$PATH
 #CXX=/app/.apt/usr/bin/g++; echo $CXX
