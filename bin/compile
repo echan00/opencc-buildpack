@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
-#echo "-----> Installing Open 1.04"
-## change to the the BUILD_DIR ($1)
+!/usr/bin/env bash
+echo "-----> Installing Open 1.04"
+# change to the the BUILD_DIR ($1)
 #cd $1
 ## download the binary (-O) silently (-s)
 #wget https://raw.githubusercontent.com/echan00/opencc-binary/master/opencc.tar.gz
@@ -8,3 +8,13 @@
 #mkdir -p vendor/opencc
 ## untar the binary to the directory we want
 #tar -C vendor/opencc -xvf opencc.tar.gz
+
+wget https://bintray.com/byvoid/opencc/download_file?file_path=opencc-1.0.4.tar.gz
+tar -xvzf 'download_file?file_path=opencc-1.0.4.tar.gz'
+cd opencc-1.0.4/
+export PATH=/app/.heroku/cmake/bin:$PATH
+#export PATH=/app/.apt/usr/bin:$PATH
+#export PATH=/app/.apt/usr/bin/g++:$PATH
+#CXX=/app/.apt/usr/bin/g++; echo $CXX
+make
+DESTDIR=/app/vendor make install
