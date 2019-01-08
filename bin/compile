@@ -9,6 +9,7 @@ echo "-----> Installing Open 1.04"
 ## untar the binary to the directory we want
 #tar -C vendor/opencc -xvf opencc.tar.gz
 
+cd $1
 wget https://bintray.com/byvoid/opencc/download_file?file_path=opencc-1.0.4.tar.gz
 tar -xvzf 'download_file?file_path=opencc-1.0.4.tar.gz'
 cd opencc-1.0.4/
