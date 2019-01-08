@@ -173,10 +173,11 @@ echo "-----> Installing Open 1.04"
 #mkdir -p vendor/opencc
 ## untar the binary to the directory we want
 #tar -C vendor/opencc -xvf opencc.tar.gz
-
+cd /app
 wget https://bintray.com/byvoid/opencc/download_file?file_path=opencc-1.0.4.tar.gz
-tar -xvzf 'download_file?file_path=opencc-1.0.4.tar.gz'
-cd opencc-1.0.4/
+mkdir -p vendor/opencc
+tar -C vendor/opencc -xvzf 'download_file?file_path=opencc-1.0.4.tar.gz'
+cd opencc-1.0.4
 #export PATH=/app/.heroku/cmake/bin:$PATH
 export PATH=$BUILD_DIR/.heroku/cmake/bin:$PATH
 #export PATH=/app/.apt/usr/bin:$PATH
@@ -184,4 +185,4 @@ export PATH=$BUILD_DIR/.heroku/cmake/bin:$PATH
 #CXX=/app/.apt/usr/bin/g++; echo $CXX
 #export LD_LIBRARY_PATH="/app/.heroku/cmake/bin:$LD_LIBRARY_PATH"
 make
-make install
+DESTDIR=/app/vendor make install
